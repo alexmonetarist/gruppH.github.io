@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>bistrowebbutveckling</title>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    <h1>Bistro Webbutveckling</h1>
-    <header>
-      <h1>Test</h1>
-    </header>
-    <nav>
-      <div class="navbar">
-        <a href="index.html">Hem</a>
-        <a href="about_us.html">Om oss</a>
-        <a href="meny.html">Meny</a>
-        <a href="hitta_hit.html">Hitta hit</a>
-        <a href="kontakter.html">Kontakter</a>
-        <a href="boka.html">Boka bord</a>
-      </div>
-    </nav>
+<head>
+  <meta charset="utf-8">
+  <title>bistrowebbutveckling</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
 
-    <footer>
-      <ul>
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="about_us.html">Om oss</a></li>
-        <li><a href="meny.html">Meny</a></li>
-        <li><a href="hitta_hit.html">Hitta hit</a></li>
-        <li><a href="kontakter.html">Kontakter</a></li>
-        <li><a href="boka.html">Boka bord</a></li>
-      </ul>
-    </footer>
-  </body>
+</head>
+<body>
+  <div class="container">
+    <navbar>
+      <a href="index.html">Hem</a>
+      <a href="about_us.html">Om oss</a>
+      <a href="hitta_hit.html">Hitta hit</a>
+      <a href="kontakter.html">Kontakter</a>
+      <a href="boka.html">Boka bord</a>
+      <div class="dropdown">
+    <button class="dropbtn">Menyer
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Frukost</a>
+      <a href="#">Lunch</a>
+      <a href="#">Middag</a>
+    </div>
+  </navbar>
+
+  <section>
+
+  </section>
+
+  <footer>
+    <dl>
+      <a href="index.html"><dt>Hem</dt></a>
+      <a href="about_us.html"><dt>Om oss</dt></a>
+      <a href="hitta_hit.html"><dt>Hitta hit</dt></a>
+      <a href="kontakter.html"><dt>Kontakter</dt></a>
+      <a href="boka.html"><dt>Boka Bord</dt></a>
+      <a href="meny.html"><dt>Frukost</dt></a>
+      <a href="meny.html"><dt>Lunch</dt></a>
+      <a href="meny.html"><dt>Middag</dt></a>
+    </dl>
+  </footer>
+  </div>
+<script type="text/javascript" src="js/script.js">
+</script>
 </html>
