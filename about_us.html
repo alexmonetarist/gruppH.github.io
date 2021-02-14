@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>bistrowebbutveckling</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/grid.css">
+       <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
   </head>
   <body>
     <header>
@@ -11,32 +13,38 @@
     </header>
     <!--Meny -->
     <nav>
-      <div class="navbar">
-        <a href="#">Hem</a>
-        <a href="#">Om oss</a>
-        <a href="#">Meny</a>
-        <a href="#">Hitta hit</a>
-        <a href="#">Kontakter</a>
-        <a href="#">Boka bord</a>
-      </div>
-    </nav>
+      <a href="index.html">Hem</a>
+      <a href="about_us.html">Om oss</a>
+      <a href="hitta_hit.html">Hitta hit</a>
+      <a href="kontakter.html">Kontakter</a>
+      <a href="boka.html">Boka bord</a>
+      <div class="dropdown">
+    <button class="dropbtn">Menyer
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Frukost</a>
+      <a href="#">Lunch</a>
+      <a href="#">Middag</a>
+    </div>
+  </nav>
       <!--Faktatext om sidan-->
     <h2>Fakta om oss</h2>
     <p id="text_om_oss">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus elementum sagittis vitae et leo duis ut diam quam. In arcu cursus euismod quis viverra nibh. Faucibus et molestie ac feugiat sed lectus. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Massa eget egestas purus viverra accumsan in nisl nisi. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Interdum velit euismod in pellentesque massa placerat. Dignissim sodales ut eu sem integer. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies.</p>
       <!--bild-->
      <img id="bild_om_oss" src="img/pizza-om-oss.jpeg" alt="Pizza" >
   <!--Meny i footer -->
-    <footer>
-      <div class="text_footer">
-        <ul>
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Meny</a></li>
-          <li><a href="#">Hitta hit</a></li>
-          <li><a href="#">Kontakter</a></li>
-          <li><a href="#">Boka bord</a></li>
-        </ul>
-      </div>
-    </footer>
+  <footer>
+    <dl>
+      <a href="index.html"><dt>Hem</dt></a>
+      <a href="about_us.html"><dt>Om oss</dt></a>
+      <a href="hitta_hit.html"><dt>Hitta hit</dt></a>
+      <a href="kontakter.html"><dt>Kontakter</dt></a>
+      <a href="boka.html"><dt>Boka Bord</dt></a>
+      <a href="meny.html"><dt>Frukost</dt></a>
+      <a href="meny.html"><dt>Lunch</dt></a>
+      <a href="meny.html"><dt>Middag</dt></a>
+    </dl>
+  </footer>
   </body>
 </html>

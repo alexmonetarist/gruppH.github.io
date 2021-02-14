@@ -2,26 +2,42 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 40px 40px 40px 40px 40px;
+    grid-row-gap: 25px;
 }
 
-navbar {
+nav {
   grid-column: 1/-1;
   grid-row: 1/2;
 }
 
-footer {
-  grid-column: 1/-1;
+header {
+  grid-column: 2/3;
   grid-row: 3/4;
 }
 
-.bild_om_oss {
+footer {
+  grid-column: 1/-1;
+  grid-row: 4/5;
+}
+
+section {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+/*.slideshow {
+  grid-column: 3/4
+  grid-row: 3/4
+}*/
+
+#bild_om_oss {
   grid-column: 3/5;
   grid-row: 2/3;
 }
 
-.text_om_oss {
+#text_om_oss {
   grid-column: 1/3;
   grid-row: 2/3;
 }
@@ -31,14 +47,14 @@ footer {
   grid-row: 2/3;
 }
 
-.bild_hitta_hit{
+#bild_hitta_hit{
   grid-column: 4/5;
   grid-row: 2/3;
 }
 
 .carbonara_bild{
-  grid-column: 2/4;
-  grid-row: 3/4;
+background-image: url("img/pastacarbonara.jpg");
+background-size: cover;
 }
 
 
@@ -48,5 +64,15 @@ footer {
 }
 
 .info{
+grid-column: 2/3;
+grid-row: 2/4;
+}
 
+@media only screen and (max-width: 450px){
+	header{
+		grid-column: 1/-1;
+}
+	nav{
+		grid-column: 1/-1;
+}
 }

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>bistrowebbutveckling</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/grid.css">
+       <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
   </head>
   <body>
 
@@ -11,35 +13,52 @@
       <h1>Boka bord</h1>
     </header>
       <!--Menylista -->
-    <nav>
-      <div class="navbar">
+      <nav>
         <a href="index.html">Hem</a>
         <a href="about_us.html">Om oss</a>
-        <a href="meny.html">Meny</a>
         <a href="hitta_hit.html">Hitta hit</a>
         <a href="kontakter.html">Kontakter</a>
         <a href="boka.html">Boka bord</a>
+        <div class="dropdown">
+      <button class="dropbtn">Menyer
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Frukost</a>
+        <a href="#">Lunch</a>
+        <a href="#">Middag</a>
       </div>
     </nav>
     <!--Kontaktuppgifter -->
     <div class="kontaktuppgifter_boka">
       <h2>Kontaktuppgifter</h2>
-      <p>Telefonnummer:070-123 45 67</p>
-      <p>Mail:bistrowebbutveckling@gmail.com</p>
+      <p>Telefonnummer: 070-123 45 67</p>
+      <p>Mail: bistrowebbutveckling@gmail.com</p>
     </div>
 
+    <section>
+      <h2>Boka bord:</h2>
+      <form>
+        <label for="fname">Antal personer</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Tid (start-slut):</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Boka">
+      </form>
+    </section>
 
 
     <footer>
-        <!--Meny i footer -->
-      <ul>
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="about_us.html">Om oss</a></li>
-        <li><a href="meny.html">Meny</a></li>
-        <li><a href="hitta_hit.html">Hitta hit</a></li>
-        <li><a href="kontakter.html">Kontakter</a></li>
-        <li><a href="boka.html">Boka bord</a></li>
-      </ul>
+      <dl>
+        <a href="index.html"><dt>Hem</dt></a>
+        <a href="about_us.html"><dt>Om oss</dt></a>
+        <a href="hitta_hit.html"><dt>Hitta hit</dt></a>
+        <a href="kontakter.html"><dt>Kontakter</dt></a>
+        <a href="boka.html"><dt>Boka Bord</dt></a>
+        <a href="meny.html"><dt>Frukost</dt></a>
+        <a href="meny.html"><dt>Lunch</dt></a>
+        <a href="meny.html"><dt>Middag</dt></a>
+      </dl>
     </footer>
   </body>
 </html>
