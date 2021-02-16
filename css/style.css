@@ -155,24 +155,33 @@ footer {
   min-height: 15%;
 }
 
-footer dl {
+footer ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style-type: none;
 }
 
-dt {
+li {
   margin-right:10px;
 }
 
-footer dt {
-  color: white;
-}
-
-dl, dd, dt {
-  display: inline;
-}
 
 h1 {
 color:black;
+}
+
+.Carbonara_bild {
+  width: 400px;
+  height: 200px;
+}
+
+.info ul {
+  list-style-type: none;
+}
+
+.fakta_om_oss img {
+  width: 400px;
+  height: 200px;
+
 }
