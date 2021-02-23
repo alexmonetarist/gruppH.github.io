@@ -185,3 +185,16 @@ color:black;
   height: 200px;
 
 }
+
+#index_h1 {
+  text-align: center;
+}
+
+.slideshow {
+  width: 500px;
+  height: 300px;
+}
+
+img {
+  width: 100%;
+}
