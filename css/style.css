@@ -198,3 +198,9 @@ color:black;
 img {
   width: 100%;
 }
+
+/*mobilanpassning*/
+@media only screen and (max-width: 450px){
+	
+
+}
